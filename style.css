@@ -1,0 +1,259 @@
+/* Supaya scroll nya smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset default margin, padding, dan font */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Bagian navigasi (menu atas) */
+.navigasi {
+  background-color: rgb(133, 148, 176); /* warna background navbar */
+  width: 100%;   /* lebar penuh layar */
+  height: 70px;  /* tinggi navbar */
+  color: white;  /* warna teks */
+  position: fixed; /* navbar tetap di atas saat discroll */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo di navbar */
+.logo {
+  float: left;         /* posisi di kiri */
+  padding-top: 20px;   /* jarak dari atas */
+  padding-left: 30px;  /* jarak dari kiri */
+  padding-bottom: 10px; /* jarak bawah */
+}
+
+/* Menu navbar (daftar link) */
+.menu {
+  padding-left: 1000px; /* posisi agak ke kanan (sebaiknya nanti pakai flex biar responsif) */
+  padding-top: 27px;    /* jarak atas */
+}
+
+.menu ul li {
+  list-style: none;       /* hilangkan bullet list */
+  display: inline-block;  /* sejajarkan menu horizontal */
+  margin-right: 50px;     /* jarak antar menu */
+}
+
+.menu ul li a {
+  text-decoration: none; /* hilangkan garis bawah link */
+  color: white;          /* warna teks putih */
+}
+
+/* Efek hover menu */
+.menu ul li a:hover {
+  color: burlywood;  /* berubah warna saat dihover */
+  font-style: italic; /* jadi miring */
+}
+
+/* Tambahan penting: supaya scroll pas di judul tidak ketutup navbar */
+#beranda,
+#Pendidikan,
+#Profil-singkat,
+#hoby,
+#Kontak {
+  scroll-margin-top: 80px; /* sesuaikan dengan tinggi navbar */
+}
+
+/* Bagian banner (area utama dengan gambar & teks) */
+.banner {
+  background-color: rgb(255, 241, 204); /* warna background */
+  height: 600px;       /* tinggi banner */
+  text-align: center;  /* teks di tengah */
+}
+
+.banner img {
+  border-radius: 100px; /* gambar jadi rounded */
+  height: 250px;        /* tinggi gambar */
+  margin-top: 100px;    /* jarak atas */
+}
+
+.banner h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Tombol di banner */
+.banner button {
+  margin-top: 60px;   /* jarak atas */
+  padding: 10px;      /* ruang dalam tombol */
+  width: 400px;       /* lebar tombol */
+  border-radius: 50px; /* sudut bulat */
+  border: none;        /* tanpa border */
+}
+
+/* Efek hover tombol */
+.banner button:hover {
+  background-color: burlywood; /* warna berubah */
+  border: 1px solid black;      /* border muncul */
+}
+
+/* Animasi teks berjalan di banner */
+h1 span:before {
+  content: "";                      
+  animation: gerak infinite 8s ease; 
+  transform: translateY(-50%);      
+  color: darkolivegreen;             
+  font-size: 70px;                  
+}
+
+/* Keyframes animasi teks */
+@keyframes gerak {
+  0% { content:"Selamat datang"; }
+  50% { content:"Saya Mochamad Rafly Hidayat"; }
+  100% { content:"Terima kasih sudah datang!"; }
+}
+
+/* Bagian box pendidikan */
+.box-pendidikan {
+  margin-top: 50px;
+  text-align: center;
+  color: darkolivegreen; 
+  padding: 40px;
+}
+
+.box-pendidikan h1 {
+  margin-bottom: 40px;
+}
+
+/* Container untuk menata box agar sejajar */
+.box-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Style untuk setiap box pendidikan */
+.box-kiri, .box-tengah, .box-kanan {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Efek hover box */
+.box-kiri:hover, .box-tengah:hover, .box-kanan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Style gambar di dalam box */
+.box-kiri img, .box-tengah img, .box-kanan img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.box-kiri h3, .box-tengah h3, .box-kanan h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Bagian data diri */
+.Data-diri {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 800px;
+  margin-bottom: 200px;
+}
+
+.Data-diri img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Data-diri .teks {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.teks .identitas {
+  font-size: 16px;
+  line-height: 1.8;
+  white-space: pre-line;
+  font-family: 'Courier New', monospace;
+}
+
+.teks .baris {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.teks .label {
+  width: 120px;
+  font-weight: bold;
+}
+
+.teks .isi {
+  flex: 1;
+}
+
+.Profil {
+  margin: 150px 50px 50px 60px;
+  text-align: center;
+  color: darkolivegreen;
+}
+
+/* Bagian hoby */
+.hoby {
+  margin-top: 80px;
+  text-align: center;
+  color: darkolivegreen; 
+  padding: 40px;
+}
+
+/* Kontak */
+.box-kontak {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.box-kontak img {
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.box-kontak p {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: gray;
+  width: 100%;
+  height: 60px;
+}
+
+.footer p {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.background{
+  background-color: rgb(190, 212, 238);
+  padding-top: 30px;
+}
