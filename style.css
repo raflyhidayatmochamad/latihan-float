@@ -224,7 +224,7 @@ h1 span:before {
 }
 
 .hoby h1{
-  margin-bottom: 50px;
+   margin-bottom: 50px; /*atur margin */
 }
 
 /* Bagian kontak */
