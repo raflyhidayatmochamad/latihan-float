@@ -223,6 +223,10 @@ h1 span:before {
   padding: 40px;              /* ruang dalam */
 }
 
+.hoby h1{
+  margin-bottom: 50px;
+}
+
 /* Bagian kontak */
 .box-kontak {
   text-align: center;       /* isi di tengah */
@@ -258,5 +262,5 @@ h1 span:before {
 .background {
   background-color: rgb(190, 212, 238); /* warna background biru muda */
   padding-top: 20px;                    /* jarak atas */
-  padding-bottom: 40px;                /*jarak bawah*/
+  padding-bottom: 80px;                /*jarak bawah*/
 }
