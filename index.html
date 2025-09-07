@@ -1,68 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Deklarasi bahwa dokumen ini menggunakan HTML5 -->
+<html lang="en"> <!-- Membuka dokumen HTML dengan bahasa English -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Tentang saya</title>
+  <meta charset="UTF-8"> <!-- Set karakter encoding menjadi UTF-8 agar teks tampil dengan benar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Agar tampilan web responsive di layar HP/desktop -->
+  <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS eksternal bernama style.css -->
+  <title>Tentang saya</title> <!-- Judul halaman yang muncul di tab browser -->
 </head>
-<body>
-  <div class="navigasi">
-      <div class="logo">
-    <H3>Mochamad Rafly Hidayat</H3>
-  </div>
-  <div class="menu">
-    <ul>
-      <li><a href="#beranda">Beranda</a></li>
-      <li><a href="#Pendidikan">Pendidikan</a></li>
-      <li><a href="#Profil-singkat">Profil</a></li>
-      <li><a href="#hoby">Hoby</a></li>
-      <li><a href="#Kontak">Kontak</a></li>
-    </ul>
-  </div>
+<body> <!-- Bagian utama isi website -->
+
+  <!-- Bagian navigasi (menu di atas) -->
+  <div class="navigasi"> 
+      <div class="logo"> <!-- Bagian untuk logo atau nama -->
+        <H3>Mochamad Rafly Hidayat</H3>
+      </div>
+      <div class="menu"> <!-- Bagian menu navigasi -->
+        <ul> <!-- Membuat daftar menu -->
+          <li><a href="#beranda">Beranda</a></li> <!-- Link ke bagian beranda -->
+          <li><a href="#Pendidikan">Pendidikan</a></li> <!-- Link ke bagian pendidikan -->
+          <li><a href="#Profil-singkat">Profil</a></li> <!-- Link ke bagian profil singkat -->
+          <li><a href="#hoby">Hoby</a></li> <!-- Link ke bagian hoby -->
+          <li><a href="#Kontak">Kontak</a></li> <!-- Link ke bagian kontak -->
+        </ul>
+      </div>
   </div>
 
+  <!-- Bagian banner (halaman utama) -->
   <div class="banner" id="beranda">
-    <img src="gambar.png" alt="Gambar saya">
-    <h1>Hallo... <span></span></h1>
-    <p>Salam hangat semuanya dan semoga sehat selalu</p>
-    <a href=""><button>Selengkapnya</button></a>
+    <img src="gambar.png" alt="Gambar saya"> <!-- Menampilkan gambar banner -->
+    <h1>Hallo... <span></span></h1> <!-- Judul utama dengan teks Hallo -->
+    <p>Salam hangat semuanya dan semoga sehat selalu</p> <!-- Paragraf sapaan -->
   </div>
 
-<div class="background">
-  <h1 class="Profil" id="Profil-singkat">Profil singkat</h1>
-<div class="Data-diri">
-  <img src="rafly.jpg" alt="gambar diri">
-  <div class="teks">
-    <p class="identitas">
-     <div class="teks">
-  <div class="baris">
-    <span class="label">Nama</span>
-    <span class="isi">: Mochamad Rafly Hidayat</span>
+  <!-- Bagian Profil singkat -->
+  <div class="background">
+    <h1 class="Profil" id="Profil-singkat">Profil singkat</h1>
+    <div class="Data-diri">
+      <img src="rafly.jpg" alt="gambar diri"> <!-- Foto diri -->
+      <div class="teks"> <!-- Bagian teks identitas -->
+        <div class="baris"> <!-- Satu baris data -->
+          <span class="label">Nama</span>
+          <span class="isi">: Mochamad Rafly Hidayat</span>
+        </div>
+        <div class="baris">
+          <span class="label">Tanggal lahir</span>
+          <span class="isi">: 1 Maret 2001</span>
+        </div>
+        <div class="baris">
+          <span class="label">Alamat</span>
+          <span class="isi">: Kp. Malayu Desa Cintarakyat RT002 RW 002 Kec. Samarang Kab. Garut<br>Prov. Jawa Barat</span>
+          <!-- Menggunakan <br> untuk pindah baris -->
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="baris">
-    <span class="label">Tanggal lahir</span>
-    <span class="isi">: 1 Maret 2001</span>
-  </div>
-  <div class="baris">
-    <span class="label">Alamat</span>
-    <span class="isi">: Kp. Malayu Desa Cintarakyat RT002 RW 002 Kec. Samarang Kab. Garut<br>Prov. Jawa Barat</span>
-  </div>
-</div>
 
-  
-  </div>
-  
-</div>
+  <!-- Bagian Pendidikan -->
   <div class="box-pendidikan">
     <h1 id="Pendidikan">Pendidikan</h1>
+
+    <!-- Pendidikan SD -->
     <div class="box-kiri">
-      <img src="sd.png" alt="logo sd">
-      <p><h3>Sekolah Dasar</h3></p>
+      <img src="sd.png" alt="logo sd"> <!-- Logo sekolah -->
+      <p><h3>Sekolah Dasar</h3></p> <!-- Judul pendidikan -->
       Saya bersekolah di SDN Ciheulang 02 yang 
         berada di kota Bandung dan lulus pada tahun 2014
       </p>
     </div>
+
+    <!-- Pendidikan SMP -->
     <div class="box-kanan">
       <img src="smp.png" alt="logo smp">
       <p><h3>Sekolah Menengah Pertama</h3></p>
@@ -70,52 +75,63 @@
         berada di kota Garut dan lulus pada tahun 2020
       </p>
     </div>
+
+    <!-- Pendidikan SMA -->
     <div class="box-kanan">
       <img src="sma.png" alt="logo sma">
       <p><h3>Sekolah Menengah Atas</h3></p>
       Saya bersekolah di SMAN 17 Garut yang 
         berada di kota Garut dan lulus pada tahun 2020
     </div>
+
+    <!-- Pendidikan Kuliah -->
     <div class="box-kanan">
-      <img src="unikom.ico" alt="logo sma">
+      <img src="unikom.ico" alt="logo universitas">
       <p><h3>Universitas Komputer Indonesia</h3></p>
-      <p>Saya melanjutkan pendidikan saya di UNIKOM lulus pada tahun 2024 dengan gelas S.kom
+      <p>Saya melanjutkan pendidikan saya di UNIKOM lulus pada tahun 2024 dengan gelar S.Kom
       </p>
     </div>
   </div>
 
-  <div class="hoby" >
+  <!-- Bagian Hoby -->
+  <div class="hoby">
     <h1 id="hoby"> Hoby Saya </h1>
+
+    <!-- Hoby Lari -->
     <div class="box-kiri">
       <img src="running.webp" alt="logo lari">
       <p><h3>Lari atau Jogging</h3></p>
-      Salah satu hoby saya adalah olahraga lari atau jogging selain supaya sehat lari atau jogging juga bisa menghilangkan setress dan penat.
+      Salah satu hoby saya adalah olahraga lari atau jogging selain supaya sehat lari atau jogging juga bisa menghilangkan stres dan penat.
       </p>
     </div>
+
+    <!-- Hoby Renang -->
     <div class="box-kanan">
-      <img src="renang.png" alt="logo smp">
-      <p><h3>renang</h3></p>
+      <img src="renang.png" alt="logo renang">
+      <p><h3>Renang</h3></p>
       Selain lari saya juga suka renang selain segar dan bikin sehat renang juga dapat meningkatkan koordinasi dan keseimbangan tubuh.
       </p>
     </div>
+
+    <!-- Hoby Nonton -->
     <div class="box-kanan">
-      <img src="nonton.png" alt="logo sma">
+      <img src="nonton.png" alt="logo nonton film">
       <p><h3>Nonton film </h3></p>
-      Selain olahraga saya juga senang nonton film selain untuk hiburan noton film juga bisa menambah wawasan kita.
+      Selain olahraga saya juga senang nonton film selain untuk hiburan nonton film juga bisa menambah wawasan kita.
     </div>
-   
   </div>
 
+  <!-- Bagian Kontak -->
   <div class="box-kontak" id="Kontak">
     <h1>Kontak Saya</h1>
     <img src="kontak.png" alt="gambar kontak">
-    <p>085-311-325-004</p>
+    <p>085-311-325-004</p> <!-- Nomor HP -->
   </div>
 
-  <div class="footer" >
+  <!-- Bagian Footer -->
+  <div class="footer">
     <p>Copyright : Mochamad Rafly Hidayat</p>
   </div>
-</div>
-  
+
 </body>
 </html>
